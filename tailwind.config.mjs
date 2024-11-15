@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  
     /* Vil du overskrive eller extende tailwinds indstillinger?  */
-
-	theme: {
+  
+    theme: {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -59,104 +59,85 @@ export default {
         'white': '#fff',
         'black': '#000',
       },
-
-spacing: {
-  'xxs': '8px',
-  'xs': '16px',
-  's': '24px',
-  'sm': '32px',
-  'm': '40px',
-  'ml': '48px',
-  'lg': '64px',
-  'xl': '80px',
-  '2xl': '96px',
-  '3xl': '112px',
-  '4xl': '128px',
-  '5xl': '112px',
-  '6xl': '128px',
-  '7xl': '112px',
-  '8xl': '128px',
-  '9xl': '424px',
-},
-
-spacing: {
-    'xxs': '8px',
-    'xs': '16px',
-    's': '24px',
-    'sm': '32px',
-    'm': '40px',
-    'ml': '48px',
-    'lg': '64px',
-    'xl': '80px',
-    '2xl': '96px',
-    '3xl': '112px',
-    '4xl': '128px',
-    '5xl': '112px',
-    '6xl': '128px',
-    '7xl': '112px',
-    '8xl': '128px',
-    '9xl': '424px',
-  },
   
-  fontFamily: {
-    sans: ['Prompt', 'sans-serif'],
-    display: ['Courier', 'monospace'], /* eksempel på ekstra font */
-  },
+      spacing: {
+        'xxs': '8px',
+        'xs': '16px',
+        's': '24px',
+        'sm': '32px',
+        'm': '40px',
+        'ml': '48px',
+        'lg': '64px',
+        'xl': '80px',
+        '2xl': '96px',
+        '3xl': '112px',
+        '4xl': '128px',
+        '5xl': '112px',
+        '6xl': '128px',
+        '7xl': '112px',
+        '8xl': '128px',
+        '9xl': '424px',
+      },
   
-  fontSize: {
-    konsultativ: ['0.688rem', { lineHeight: '1.0rem' }],
-    body: ['0.813rem', { lineHeight: '1.25rem' }],
-    base: ['1rem', { lineHeight: '1.5rem' }],
-    small: ['1.5rem', { lineHeight: '2.25rem' }],
-    medium: ['2rem', { lineHeight: '3rem' }],
-    large: ['2.5rem', { lineHeight: '3.75rem' }],
-    xlarge: ['3rem', { lineHeight: '4.5rem' }],
-    // body: ['13px', { lineHeight: '1.25rem' }],
-    // small: ['24px', { lineHeight: '2.25rem' }],
-    // medium: ['32px', { lineHeight: '3rem' }],
-    // large: ['40px', { lineHeight: '3.75rem' }],
-    // xlarge: ['48px', { lineHeight: '4.5rem' }],
-  },
+      fontFamily: {
+        sans: ['Prompt', 'sans-serif'],
+        display: ['Courier', 'monospace'], /* eksempel på ekstra font */
+      },
   
-  fontWeight: {
-    light: '300',
-    regular: '400',
-    semibold: '600',
-  },
+      fontSize: {
+        konsultativ: ['0.688rem', { lineHeight: '1.0rem' }],
+        body: ['0.813rem', { lineHeight: '1.25rem' }],
+        base: ['1rem', { lineHeight: '1.5rem' }],
+        small: ['1.5rem', { lineHeight: '2.25rem' }],
+        medium: ['2rem', { lineHeight: '3rem' }],
+        large: ['2.5rem', { lineHeight: '3.75rem' }],
+        xlarge: ['3rem', { lineHeight: '4.5rem' }],
+        // body: ['13px', { lineHeight: '1.25rem' }],
+        // small: ['24px', { lineHeight: '2.25rem' }],
+        // medium: ['32px', { lineHeight: '3rem' }],
+        // large: ['40px', { lineHeight: '3.75rem' }],
+        // xlarge: ['48px', { lineHeight: '4.5rem' }],
+      },
   
-  borderWidth: {
-    DEFAULT: '1px',
-    0: '0px',
-    2: '2px',
-    3: '3px',
-    4: '4px',
-  },
+      fontWeight: {
+        light: '300',
+        regular: '400',
+        semibold: '600',
+      },
   
-  borderRadius: {
-    DEFAULT: '20px',
-    none: '0px',
-    sm: '10px', /* sættes i REM? */
-    md: '30px',
-    lg: '40px',
-    full: '9999px',
-  },
+      borderWidth: {
+        DEFAULT: '1px',
+        0: '0px',
+        2: '2px',
+        3: '3px',
+        4: '4px',
+      },
   
-        /* Box shadows herunder */
-        boxShadow: {
-drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
-drop50:  '4px 4px 4px 0 rgb(0 0 0 / 0.50)',
-inner25:  '0 4px 4px 0 rgb(0 0 0 / 0.25) inset',
-inner50:  '0 4px 4px 0 rgb(0 0 0 / 0.50) inset',
-
-        // },
-
-		extend: {
-        },
-	},
-	plugins: [
-        require('@tailwindcss/typography'),
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/aspect-ratio'),
-        require('@tailwindcss/container-queries'),
-    ]}
-}
+      borderRadius: {
+        DEFAULT: '20px',
+        none: '0px',
+        sm: '10px', /* sættes i REM? */
+        md: '30px',
+        lg: '40px',
+        full: '9999px',
+      },
+  
+      /* Box shadows herunder */
+      boxShadow: {
+        drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
+        drop50:  '4px 4px 4px 0 rgb(0 0 0 / 0.50)',
+        inner25: '0 4px 4px 0 rgb(0 0 0 / 0.25) inset',
+        inner50: '0 4px 4px 0 rgb(0 0 0 / 0.50) inset',
+      },
+    },
+  
+    extend: {},
+  
+    plugins: [
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/aspect-ratio'),
+      require('@tailwindcss/container-queries'),
+    ],
+  };
+  
